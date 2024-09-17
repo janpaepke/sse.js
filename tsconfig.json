@@ -1,11 +1,10 @@
 {
-  "include": ["lib/**/*", "index.d.ts"],
-  "exclude": ["node_modules", "lib/**/*.test.*"],
-  "compilerOptions": {
-    "allowJs": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "types",
-    "declarationMap": true,
-  },
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules", "**/*.test.*"],
+	"compilerOptions": {
+		"outDir": "./dist",
+		"declaration": true,
+		"strict": true,
+		"removeComments": false
+	}
 }
